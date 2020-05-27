@@ -1,0 +1,102 @@
+/*colors {rgb(27, 24, 24 ) ash ,rgb(104, 43, 89) pink, 
+}
+*/
+
+* {
+  margin: 0;
+}
+body {
+  background-color: rgb(53, 46, 46);
+}
+
+#heading {
+  margin-left: 100px;
+  font-style: arial;
+  font-family: Lucidatypewriter, monospace;
+  text-decoration: underline;
+  color: #41233ccc;
+  margin-left: 5px;
+}
+
+header {
+  background-color: rgb(104, 43, 89);
+  background-image: linear-gradient(
+      to right,
+      rgba(104, 43, 89, 0.781),
+      rgba(104, 43, 89, 0.644)
+    ),
+    url("../todobg.jpg");
+
+  height: 150px;
+  margin: 3px;
+  border-radius: 7px;
+}
+
+.input-div {
+  margin-top: 20px;
+}
+.input {
+  width: 280px;
+  height: 24px;
+  border-radius: 30px;
+  color: rgb(53, 46, 46);
+  outline: none;
+  background-color: #c0c0c0;
+  border-color: none;
+  border: none;
+  padding-left: 5%;
+}
+
+.addbutton {
+  outline: none;
+  background-color: rgb(53, 46, 46);
+  border-radius: 50px;
+  border: none;
+  font-size: larger;
+  height: 30px;
+  margin-left: 11px;
+  color: rgb(104, 43, 89);
+}
+.item {
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 4px solid rgb(99, 80, 94);
+}
+
+.item-input {
+  background: none;
+  color: rgb(245, 223, 244);
+  margin-top: 5px;
+  height: 40px;
+  width: 330px;
+  font-size: larger;
+  border: none;
+  outline: none;
+}
+
+.editButton {
+  background: none;
+  border: none;
+  outline: none;
+  color: rgb(104, 43, 89);
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin: 0.5rem;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  outline: none;
+  color: rgb(104, 43, 46);
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin: 0.5rem;
+}
+.checkbox {
+  background-color: #c0c0c0;
+  background: none;
+  border-radius: 200px;
+  border: none;
+  outline: none;
+}
