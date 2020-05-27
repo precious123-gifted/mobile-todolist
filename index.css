@@ -25,7 +25,7 @@ header {
       rgba(104, 43, 89, 0.781),
       rgba(104, 43, 89, 0.644)
     ),
-    url("../todobg.jpg");
+    url("todobg.jpg");
 
   height: 150px;
   margin: 3px;
@@ -68,7 +68,7 @@ header {
   color: rgb(245, 223, 244);
   margin-top: 5px;
   height: 40px;
-  width: 330px;
+  width: 300px;
   font-size: larger;
   border: none;
   outline: none;
