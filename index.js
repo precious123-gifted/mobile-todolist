@@ -1,43 +1,53 @@
-const addbutton = document.querySelector(".addbutton");
-var inputvalue = document.querySelector(".input");
-const container = document.querySelector(".container");
+function addItem() {
+  inputToDo = document.getElementById("input");
 
-class item {
-  constructor(itemName) {
-    this.createDiv(itemName);
-  }
+  if (inputToDo.value) {
+    container = document.createElement("div");
+    item = document.createElement("div");
+    item.classList.add("item");
 
-  createDiv(itemName) {
-    let input = document.createElement("input");
-    input.value = itemName;
-    input.disabled = true;
+    checkBox = document.createElement("input");
+    checkBox.type = "checkbox";
+    checkBox.classList.add("checkbox");
+
+    input = document.createElement("input");
+
     input.classList.add("item-input");
-    input.type = "text";
+    input.value = inputToDo.value;
+    input.disabled = true;
+    inputToDo.value = "";
 
-    let itemBox = document.createElement("div");
-    itemBox.classList.add("editbutton");
+    editButton = document.createElement("button");
 
-    let editButton = document.createElement("button");
-    editButton.innerHTML = "EDIT";
-    editButton.classList.add("editbutton");
-    let removeButton = document.createElement("button");
-    removeButton.innerHTML = "REMOVE";
-    removeButton.classList.add("removebutton");
+    editButton.classList.add("editButton");
 
-    container.appendChild(itemBox);
+    textEdit = document.createTextNode("EDIT");
+    editButton.appendChild(textEdit);
+    editButton.addEventListener("click", () => this.editItem());
+    //editButton.addEventListener("click", () => this.editItem());
 
-    itemBox.appendChild(input);
-    itemBox.appendChild(editButton);
-    itemBox.appendChild(removeButton);
+    removeButton = document.createElement("button");
+    removeButton.classList.add("removeButton");
 
-    editButton.addEventListener("click", () => this.edit(input));
-  }
-  edit(input) {
-    input.disabled = !input.disabled;
-  }
-  remove(item) {
-    container.removeChild(item);
+    textRemove = document.createTextNode("REMOVE");
+    removeButton.appendChild(textRemove);
+    removeButton.addEventListener("click", () => removeItem(item));
+
+    container.appendChild(item);
+    item.appendChild(checkBox);
+    item.appendChild(input);
+
+    item.appendChild(editButton);
+    item.appendChild(removeButton);
+
+    document.body.appendChild(container);
   }
 }
 
-new item("workout");
+function removeItem(itemName) {
+  container.removeChild(item);
+}
+
+function editItem() {
+  input.disabled = !true;
+}
