@@ -1,31 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>to-do list</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <script src="index.js"></script>
+    <title>Document</title>
   </head>
-  <body><header>
-    <h1 id="heading">TODO</h1>
-
-    <div class="input-div">
+  <body>
+    <header>
+      <h1>LISTme</h1>
       <input
         type="text"
-        class="input"
-        id='input'
-        placeholder="what do you want to do...."
+        class="inputtodo"
+        id="inputtodo"
+        placeholder="what are you doing"
       />
-      <button class="addbutton" onclick="addItem()">+</i></button>
-</header>
-<div class="container" id="container"></div>
-
-
-
-        
-      </div>
-    </div>
+      <button class="addb" id="addb" onClick="addItem()">+</button>
+    </header>
+    <div id="container"></div>
   </body>
 </html>

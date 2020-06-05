@@ -1,107 +1,78 @@
-/*colors {rgb(27, 24, 24 ) ash ,rgb(104, 43, 89) pink, 
-}
-*/
-
 * {
   margin: 0;
 }
+
 body {
-  background-color: rgb(53, 46, 46);
-}
-
-#heading {
-  margin-left: 100px;
-  font-style: arial;
-  font-family: Lucidatypewriter, monospace;
-  text-decoration: underline;
-  color: #41233ccc;
-  margin-left: 5px;
-}
-
-header {
-  background-color: rgb(104, 43, 89);
   background-image: linear-gradient(
       to right,
-      rgba(104, 43, 89, 0.781),
-      rgba(104, 43, 89, 0.644)
+      rgba(54, 54, 54, 0.699),
+      rgb(180, 180, 180)
     ),
-    url("todobg.jpg");
-
-  height: 150px;
-  margin: 3px;
-  border-radius: 7px;
+    url("bg.jpg");
+}
+header {
+  background-color: rgb(42, 102, 143);
+  height: 120px;
+  box-shadow: 0 8px 4px -2px rgb(53, 53, 53);
+  border-radius: 8px;
+}
+header h1 {
+  margin-left: 20px;
+  color: rgb(54, 54, 54);
 }
 
-.input-div {
-  margin-top: 20px;
-}
-.input {
-  width: 280px;
-  height: 24px;
-  border-radius: 30px;
-  color: rgb(53, 46, 46);
-  outline: none;
-  background-color: #c0c0c0;
-  border-color: none;
-  border: none;
-  padding-left: 5%;
-}
-
-.addbutton {
-  outline: none;
-  background-color: rgb(53, 46, 46);
-  border-radius: 50px;
-  border: none;
-  font-size: larger;
-  height: 30px;
-  margin-left: 11px;
-  color: rgb(104, 43, 89);
-}
-.item {
-  padding: 0.5rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 4px solid rgb(99, 80, 94);
-}
-
-.item-input {
-  background: none;
-  color: rgb(245, 223, 244);
-  display: flex;
-  margin-top: 5px;
-  height: 40px;
+.inputtodo {
+  margin-top: 30px;
   width: 300px;
+  height: 30px;
+  border-radius: 11px;
   font-size: larger;
+  padding-left: 6px;
+  margin-left: 20px;
+  color: rgb(255, 252, 238);
+  background-color: rgb(133, 133, 133);
+  outline: none;
   border: none;
+}
+
+.addb {
+  background-color: rgb(48, 48, 48);
+  border: none;
+  color: rgb(240, 240, 240);
+  outline: none;
+  margin-left: 5px;
+  border-radius: 9px;
+  height: 30px;
+}
+
+.item {
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-top: 3px;
+  background-color: rgba(12, 12, 12, 0.397);
+  border-radius: 11px;
+  width: 339px;
+  height: 28px;
+}
+
+.check {
+  margin-left: 3px;
+  border-radius: 9em;
+}
+
+.inputdo {
+  width: 236px;
+  border: none;
+  background: none;
+  color: rgb(238, 238, 238);
+  font-size: larger;
   outline: none;
 }
 
-.editButton {
+.remove {
   background: none;
-
-  border: none;
+  border-radius: 20px;
+  border: 1px solid rgba(128, 34, 34, 0.767);
+  color: rgba(128, 34, 34, 0.815);
   outline: none;
-  color: rgb(104, 43, 89);
-  font-size: 1.2rem;
-  font-weight: bolder;
-  margin: 0.5rem;
-}
-
-.removeButton {
-  background: none;
-
-  border: none;
-  outline: none;
-  color: rgb(104, 43, 46);
-  font-size: 1.2rem;
-  font-weight: bolder;
-  margin: 0.5rem;
-}
-.checkbox {
-  background-color: #000000;
-  background: none;
-  border-radius: 200px;
-  border: none;
-  outline: none;
-  margin: 0;
-  display: table-row;
 }
