@@ -1,78 +1,94 @@
-* {
-  margin: 0;
-}
+@media only screen and (max-width: 375px) {
+  * {
+    margin: 0;
+  }
 
-body {
-  background-image: linear-gradient(
-      to right,
-      rgba(54, 54, 54, 0.699),
-      rgb(180, 180, 180)
-    ),
-    url("bg.jpg");
-}
-header {
-  background-color: rgb(42, 102, 143);
-  height: 120px;
-  box-shadow: 0 8px 4px -2px rgb(53, 53, 53);
-  border-radius: 8px;
-}
-header h1 {
-  margin-left: 20px;
-  color: rgb(54, 54, 54);
-}
+  body {
+    background-image: linear-gradient(
+        to right,
+        rgba(54, 54, 54, 0.699),
+        rgb(180, 180, 180)
+      ),
+      url("bg.jpg");
+  }
+  header {
+    background-color: rgb(42, 102, 143);
+    height: 120px;
+    box-shadow: 0 8px 4px -2px rgb(53, 53, 53);
+    border-radius: 8px;
+  }
+  header h1 {
+    margin-left: 20px;
+    color: rgb(54, 54, 54);
+  }
 
-.inputtodo {
-  margin-top: 30px;
-  width: 300px;
-  height: 30px;
-  border-radius: 11px;
-  font-size: larger;
-  padding-left: 6px;
-  margin-left: 20px;
-  color: rgb(255, 252, 238);
-  background-color: rgb(133, 133, 133);
-  outline: none;
-  border: none;
-}
+  .inputtodo {
+    margin-top: 30px;
+    width: 300px;
+    height: 30px;
+    border-radius: 11px;
+    font-size: larger;
+    padding-left: 6px;
+    margin-left: 20px;
+    color: rgb(255, 252, 238);
+    background-color: rgb(133, 133, 133);
+    outline: none;
+    border: none;
+  }
 
-.addb {
-  background-color: rgb(48, 48, 48);
-  border: none;
-  color: rgb(240, 240, 240);
-  outline: none;
-  margin-left: 5px;
-  border-radius: 9px;
-  height: 30px;
-}
+  .addb {
+    background-color: rgb(48, 48, 48);
+    border: none;
+    color: rgb(240, 240, 240);
+    outline: none;
+    margin-left: 5px;
+    border-radius: 9px;
+    height: 30px;
+  }
 
-.item {
-  margin-top: 20px;
-  margin-left: 20px;
-  padding-top: 3px;
-  background-color: rgba(12, 12, 12, 0.397);
-  border-radius: 11px;
-  width: 339px;
-  height: 28px;
-}
+  .item {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-top: 3px;
+    background-color: rgba(12, 12, 12, 0.397);
+    border-radius: 11px;
+    width: 339px;
+    height: 28px;
+  }
 
-.check {
-  margin-left: 3px;
-  border-radius: 9em;
-}
+  .check {
+    margin-left: 3px;
+    border-radius: 9em;
+  }
 
-.inputdo {
-  width: 236px;
-  border: none;
-  background: none;
-  color: rgb(238, 238, 238);
-  font-size: larger;
-  outline: none;
-}
+  .inputdo {
+    width: 236px;
+    border: none;
+    background: none;
+    color: rgb(238, 238, 238);
+    font-size: larger;
+    outline: none;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
 
-.remove {
-  background: none;
-  border-radius: 20px;
-  border: 1px solid rgba(128, 34, 34, 0.767);
-  color: rgba(128, 34, 34, 0.815);
-  outline: none;
+  .checked {
+    width: 236px;
+    border: none;
+    background: none;
+    color: rgb(238, 238, 238);
+    font-size: larger;
+    outline: none;
+    color: rgba(212, 212, 212, 0.493);
+
+    text-decoration: line-through;
+  }
+
+  .remove {
+    background: none;
+    border-radius: 20px;
+    border: 1px solid rgba(128, 34, 34, 0.767);
+    color: rgba(128, 34, 34, 0.815);
+    outline: none;
+  }
 }

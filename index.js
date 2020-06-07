@@ -10,7 +10,15 @@ function addItem() {
     checkBox = document.createElement("input");
     checkBox.type = "checkBox";
     checkBox.classList.add("check");
-    checkBox.addEventListener("click", () => checkd());
+    checkBox.addEventListener("click", function (e) {
+      if (e.target.classList == "check") {
+        if (e.target.checked) {
+          e.target.nextElementSibling.classList = "checked";
+        } else {
+          e.target.nextElementSibling.classList = "inputdo";
+        }
+      }
+    });
 
     input = document.createElement("input");
 
@@ -30,6 +38,7 @@ function addItem() {
     item.appendChild(input);
 
     item.appendChild(removeButton);
+
     item.addEventListener("click", function (e) {
       if (e.target.classList == "remove") {
         e.target.parentNode.remove();
@@ -38,18 +47,16 @@ function addItem() {
   }
 }
 
-function checkd() {
-  if (checkBox.checked) {
-    input.style.textDecoration = "line-through";
-    input.style.color = "rgba(238, 238, 238, 0.308)";
-  } else {
-    input.style.textDecoration = "none";
-    input.style.color = "";
-  }
-}
-
 window.addEventListener("keydown", (e) => {
   if (e.which == 13) {
     addItem();
   }
 });
+
+function checked() {
+  if (checkBox.checked) {
+    input.classList = "checked";
+  } else {
+    input.classList = "inputdo";
+  }
+}
