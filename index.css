@@ -80,7 +80,8 @@
     font-size: larger;
     outline: none;
     color: rgba(212, 212, 212, 0.493);
-
+    padding-left: 4px;
+    padding-right: 4px;
     text-decoration: line-through;
   }
 
